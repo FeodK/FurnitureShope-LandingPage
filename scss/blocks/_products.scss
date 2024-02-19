@@ -1,0 +1,41 @@
+.products {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+.products__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+  font-weight: 700;
+}
+.products__tabs {
+  margin-bottom: 80px;
+  text-align: center;
+
+}
+.products__slider {
+  margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
+
+  @include laptop() {
+    padding: 0 20px;
+  }
+}
+
+.products__block-link {
+  text-align: center;
+}
+
+.products__link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.85;
+
+  &::after {
+    content: url("./../img/icons/arrow-link.svg");
+    height: 24px;
+  }
+}
